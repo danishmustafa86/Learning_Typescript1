@@ -1,50 +1,25 @@
 
 
 import inquirer from "inquirer"
-console.log("before operations");
 async function numbers() {
-try {
-    // var numbers=await inquirer.prompt([{
-    //     type:"number",
-    //     name:"num",
-    //     message:"enter your message"
-    // }]) 
-    var number=await inquirer.prompt([{
+    var numbers= inquirer.prompt([{
         type:"number",
-        name:"num2",
-        message:"enter your message2"
-    }]) 
-    var numbers=await inquirer.prompt([{
+        name:"num",
+        message:"enter your message"
+    }])
+    var number= inquirer.prompt([{
         type:"number",
-        name:"num1",
-        message:"enter your message2"
-    }]) 
+        name:"num",
+        message:"enter your message"
+    }])
+        var numbes= inquirer.prompt([{
+        type:"number",
+        name:"num",
+        message:"enter your message"
+    }])
+}
 
-    if (number.num2>100&&number.num20) {
-         ("please  enter valid number");
-        }
-    if (number.num2>60&&number.num2<80) {
- ("user  get A+ grade ");
-        }
-    if (numbers.num1<100&&numbers.num1>40) {
-        ("user is pass");
-        }
-    if (numbers.num1>0&&numbers.num1<40) {
-        ("user is fail ");
-        }
- }
- catch (error) {
-    console.log("error are as",error);
-}
-finally{
-    console.log("your respose is start for submition");
-    
-}
-}
-   
-    console.log("after operations");
-   
-numbers()
+
 
 
 
