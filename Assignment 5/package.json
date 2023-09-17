@@ -1,0 +1,13 @@
+{
+  "name": "started-with-nodejs-and-typescript",
+  "version": "1.0.0",
+  "description": "**# Getting Started Exercises with TypeScript and Node.js**",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
