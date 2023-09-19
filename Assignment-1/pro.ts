@@ -12,10 +12,10 @@
 // 10 - Write a program that takes the number of units consumed by a user if it is greater than 100 then add 10% tax if greater than 200 then add 15% of tax so on up to if greater than 500 then add 25% of tax
 // Where the tax amount will be calculated by the amount of bill.
 
-// 1 Write a program to convert the temperature from Celsius to Fahrenheit and vice verse.
+// 1 Write a program to convert the tempature from Celsius to Fahrenheit and vice verse.
 var temperatureinc:number = 40
 var temperatureinf:number = temperatureinc*(9/5) + 32
-console.log("tempereture in faranheight",temperatureinf)
+console.log("tmpereture in faranheight",temperatureinf)
 
 // 2 Write a program that calculates the percentage./
 // var english:number =89
