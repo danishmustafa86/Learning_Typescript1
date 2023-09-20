@@ -15,7 +15,7 @@
 // 1 Write a program to convert the tempature from Celsius to Fahrenheit and vice verse.
 var temperatureinc:number = 40
 var temperatureinf:number = temperatureinc*(9/5) + 32
-console.log("tmpereture in faranheight",temperatureinf)
+console.log("t4mpereture in faranheight",temperatureinf)
 
 // 2 Write a program that calculates the percentage./
 // var english:number =89
@@ -33,10 +33,10 @@ console.log("tmpereture in faranheight",temperatureinf)
 
 // 2 Write a program that calculates the percentage.
 
-var glish:number = 89;
-var urdu:number =84
+var eglish:number = 89;
+var urdu:number =89
 var math:number =90
-var sum:number =glish+urdu+math
+var sum:number =eglish+urdu+math
 console.log("sum",sum) 
 
 var total:number=300
