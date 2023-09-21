@@ -6,7 +6,7 @@ function arryOfNumbers(rray:number[]) {
             positive.push(numb)
         }
     }return positive
-}console.log(arryOfNumbers([1,2,-9,76,-8,9]));
+}console.log(arryOfNumbers([1,2,-8,7,76,-8,9]));
 
 
 
