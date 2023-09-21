@@ -34,7 +34,7 @@ async function name() {
     }
     
     finally{
-        console.log("Your response is submitting");
+        console.log("Your response is submiting");
         
     }
     
