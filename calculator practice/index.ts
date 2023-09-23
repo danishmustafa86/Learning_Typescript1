@@ -12,7 +12,7 @@ var result = await inquirer.prompt([{
     type: "list",
     name: "operations",
     message: "perform the operation of your choice",
-    choices: ["addition", "subtraction", "multiplication", "division", "remainder"]
+    choices: ["addition", "subtraction", "multiplication", "division", "remainder","exponent"]
 }])
 switch (result.operations) {
     case "addition":
@@ -22,13 +22,19 @@ switch (result.operations) {
             console.log(`subtraction of these numbers is`, result.num1 - result.num2);
             break; case "multiplication":
             console.log(`multiplication of these numbers is`, result.num1 * result.num2);
+            break;
             case "division":
                 console.log(`division
                  of these numbers is`, result.num1 / result.num2);
                 break;
+
             case "remainder":
         console.log(`remainder of these numbers is`, result.num1 % result.num2);
         break;
+        case "division":
+            console.log(`division
+             of these numbers is`, result.num1 / result.num2);
+            break;
     default:
         
         break;
