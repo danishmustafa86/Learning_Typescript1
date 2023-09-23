@@ -1,4 +1,6 @@
 import inquirer from "inquirer";
+async function calculator() {
+    
 var resul = await inquirer.prompt([{
     type: "number",
     message: "Enter a number1",
@@ -34,3 +36,5 @@ switch (resul.operation) {
     default:
         break;
 }
+}
+calculator()
