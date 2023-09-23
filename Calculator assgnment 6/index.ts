@@ -10,8 +10,8 @@ var resul = await inquirer.prompt([{
 }, {
     type: "list",
     name: "operation",
-    message: "Enter a number1",
-    choices: ["+", "-", "*", "/", "%"]
+    message: "perform a operation",
+    choices: ["+", "-", "*", "/", "%","^"]
 }])
 // let result2: number;
 switch (resul.operation) {
@@ -20,13 +20,16 @@ switch (resul.operation) {
         break;
     case "-":
         console.log(`subtraction of these numbers is`, resul.num1 - resul.num2);
-        break; case "+":
+        break; case "*":
         console.log(`product of these numbers is`, resul.num1 * resul.num2);
         break; case "/":
         console.log(`division of these numbers is`, resul.num1 / resul.num2);
         break;
-        break; case "/":
+        break; case "%":
         console.log(`modulus of these numbers is`, resul.num1 % resul.num2);
+        break;
+        break; case "^":
+        console.log(`exponent of these numbers is`, resul.num1 ** resul.num2);
         break;
     default:
         break;
