@@ -1,3 +1,4 @@
+import chalk from "chalk";
 import inquirer from "inquirer";
 async function calculator() {
     var resul = await inquirer.prompt([{
@@ -12,32 +13,43 @@ async function calculator() {
             type: "list",
             name: "operation",
             message: "perform a operation",
-            choices: ["+", "-", "*", "/", "%", "^"]
+            choices: ["add", "subtract", "multiply", "division", "remainder", "enxponent"]
         }]);
-    // let result2: number;
     switch (resul.operation) {
-        case "+":
+        case "add":
             console.log(`sum of these numbers is`, resul.num1 + resul.num2);
             break;
-        case "-":
+        case "subract":
             console.log(`subtraction of these numbers is`, resul.num1 - resul.num2);
             break;
-        case "*":
+        case "multiply":
             console.log(`product of these numbers is`, resul.num1 * resul.num2);
             break;
-        case "/":
-            console.log(`division of these numbers is`, resul.num1 / resul.num2);
+        case "division":
+            console.log(chalk.green.bgYellow(`division of these numbers is`, resul.num1 / resul.num2));
             break;
             break;
-        case "%":
-            console.log(`modulus of these numbers is`, resul.num1 % resul.num2);
+        case "remainder":
+            console.log(`modulus of these numbers is`, (resul.num1 % resul.num2));
             break;
             break;
-        case "^":
+        case "enxponent":
             console.log(`exponent of these numbers is`, resul.num1 ** resul.num2);
             break;
         default:
             break;
+    }
+    var againAns = await inquirer.prompt([{
+            type: "list",
+            name: "response",
+            message: `would you like to repeat the calculation`,
+            choices: ["Yes", "No"]
+        }]);
+    if (againAns.response == "Yes") {
+        calculator();
+    }
+    if (againAns.response == "No") {
+        console.log(`your calculation is completed successfully`);
     }
 }
 calculator();
