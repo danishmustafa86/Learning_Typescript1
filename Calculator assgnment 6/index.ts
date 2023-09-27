@@ -18,35 +18,34 @@ async function calculator() {
     }])
     switch (resul.operation) {
         case "add":
-            console.log(`sum of these numbers is`, resul.num1 + resul.num2);
+            console.log(chalk.bgRed(`sum of these numbers is`, (resul.num1 + resul.num2)));
             break;
-        case "subract":
-            console.log(`subtraction of these numbers is`, resul.num1 - resul.num2);
+        case "subtract":
+            console.log(chalk.bgBlue(`subtraction of these numbers is`,(resul.num1 - resul.num2)));
             break; case "multiply":
-            console.log(`product of these numbers is`, resul.num1 * resul.num2);
+            console.log(chalk.yellow.bgGray(`product of these numbers is`, (resul.num1 * resul.num2)));
             break; case "division":
-            console.log(chalk.green.bgYellow(`division of these numbers is`, resul.num1 / resul.num2));
+            console.log(chalk.green.bgYellow(`division of these numbers is`, (resul.num1 / resul.num2)));
             break;
             break; case "remainder":
-            console.log(`modulus of these numbers is`, (resul.num1 % resul.num2));
+            console.log(chalk.black.bgBlue(`modulus of these numbers is`, (resul.num1 % resul.num2)));
             break;
             break; case "enxponent":
-            console.log(`exponent of these numbers is`, resul.num1 ** resul.num2);
+            console.log(chalk.black.bgGreen(`exponent of these numbers is`, (resul.num1 ** resul.num2)));
             break;
         default:
             break;
     }
     var againAns = await inquirer.prompt([{
-        type: "list",
+        type: "confirm",
         name: "response",
         message: `would you like to repeat the calculation`,
-        choices: ["Yes", "No"]
+        choices: ["Y", "N"]
     }])
-    if (againAns.response == "Yes") {
+    if (againAns.response) {
         calculator()
 
-    }
-    if (againAns.response == "No") {
+    } else {
         console.log(`your calculation is completed successfully`);
     }
 
