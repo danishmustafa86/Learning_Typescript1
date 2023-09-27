@@ -17,24 +17,24 @@ async function calculator() {
         }]);
     switch (resul.operation) {
         case "add":
-            console.log(chalk.bgRed(`sum of these numbers is`, (resul.num1 + resul.num2)));
+            console.log(chalk.bold.blue.bgRed(`sum of these numbers is`, (resul.num1 + resul.num2)));
             break;
         case "subtract":
-            console.log(chalk.bgBlue(`subtraction of these numbers is`, (resul.num1 - resul.num2)));
+            console.log(chalk.red.bold.bgBlue(`subtraction of these numbers is`, (resul.num1 - resul.num2)));
             break;
         case "multiply":
-            console.log(chalk.yellow.bgGray(`product of these numbers is`, (resul.num1 * resul.num2)));
+            console.log(chalk.yellow.bold.bgGray(`product of these numbers is`, (resul.num1 * resul.num2)));
             break;
         case "division":
-            console.log(chalk.green.bgYellow(`division of these numbers is`, (resul.num1 / resul.num2)));
+            console.log(chalk.green.bold.bgYellow(`division of these numbers is`, (resul.num1 / resul.num2)));
             break;
             break;
         case "remainder":
-            console.log(chalk.black.bgBlue(`modulus of these numbers is`, (resul.num1 % resul.num2)));
+            console.log(chalk.black.bold.bgBlue(`modulus of these numbers is`, (resul.num1 % resul.num2)));
             break;
             break;
         case "enxponent":
-            console.log(chalk.black.bgGreen(`exponent of these numbers is`, (resul.num1 ** resul.num2)));
+            console.log(chalk.blue.bold.bgGreen(`exponent of these numbers is`, (resul.num1 ** resul.num2)));
             break;
         default:
             break;
@@ -45,13 +45,11 @@ async function calculator() {
             message: `would you like to repeat the calculation`,
             choices: ["Y", "N"]
         }]);
-    console.log("againAns : " + againAns);
-    console.log("againAns.response : " + againAns.response);
     if (againAns.response) {
         calculator();
     }
     else {
-        console.log(`your calculation is completed successfully`);
+        console.log(`Now your calculation is completed successfully`);
     }
 }
 calculator();
