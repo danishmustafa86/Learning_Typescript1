@@ -1,17 +1,20 @@
 // let array=[1,2,3,4,5,6,7]
 // array.splice(2,3,4,5,6)
 // function sumin(...name:string[]) {
-//     for (let index = 0; index < name.length; index++) {
+//     for (let index = 0; index < 1; index++) {
 //         name.splice(1,0,"danish","ahmad")
 //         console.log(name);
-        
-//         const element = sumin[index];
-//         console.log(element);
-        
-//     }
+//           }
 // }
 // console.log(sumin("jajja","hamid"));
 
+// function suman(...name:number[]) {
+//     for (let index = 0; index < 1; index++) {
+//         name.splice(1,0,3,4,5,6)
+//         console.log(name);
+//           }
+// }
+// console.log(suman(2,9,3,7));
 
 //                                        overloads
 

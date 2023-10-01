@@ -1,14 +1,23 @@
 // let array=[1,2,3,4,5,6,7]
 // array.splice(2,3,4,5,6)
 // function sumin(...name:string[]) {
-//     for (let index = 0; index < name.length; index++) {
+//     for (let index = 0; index < 1; index++) {
 //         name.splice(1,0,"danish","ahmad")
 //         console.log(name);
-//         const element = sumin[index];
-//         console.log(element);
-//     }
+//           }
 // }
 // console.log(sumin("jajja","hamid"));
+function suman() {
+    var name = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        name[_i] = arguments[_i];
+    }
+    for (var index = 0; index < 1; index++) {
+        name.splice(1, 0, 3, 4, 5, 6);
+        console.log(name);
+    }
+}
+console.log(suman(2, 9, 3, 7));
 //                                        overloads
 // function add(n1:number,n2:number):number 
 // function add(n1:string,n2:string,):string
@@ -55,15 +64,15 @@
 //     modelYear:2023;
 //     color:string;
 // }
-var cAr = /** @class */ (function () {
-    function cAr(_company, _modelYear, _color) {
-        this.modelYear = 0;
-        this.color = "";
-        this.company = _company;
-        this.modelYear = _modelYear;
-        this.color = _color;
-    }
-    return cAr;
-}());
-var bmw = new cAr("honda", 2023, "black");
-console.log(bmw);
+// class cAr {
+//     company:string;""
+//     modelYear:number=0
+//     color:string=""
+//     constructor(_company:string,_modelYear:number,_color:string){
+//         this.company=_company
+//         this.modelYear=_modelYear
+//         this.color=_color
+//     }
+// }
+// const bmw=new cAr("honda",2023,"black") 
+// console.log(bmw);
