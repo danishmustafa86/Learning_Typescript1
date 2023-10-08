@@ -1,27 +1,29 @@
-"use strict";
 // ENCAPSULATION
 //1 public=everyone can use 
 //2 protected=only childs can use parents properties
 //3 privete=no one can use
 class bank {
-    constructor() {
-        //    private balance:number=0
-        //    protected balance:number=0
-        this.balance = 0;
-    }
+    //    private balance:number=0
+    //    protected balance:number=0
+    balance = 110;
     getBalance() {
         return this.balance;
     }
 }
+let balan = new bank();
+// console.log("parent funtion is",balan.getBalance());
 class account extends bank {
-    constructor() {
-        super(...arguments);
-        this.transactions = [];
-    }
+    transactions = [1, 2, 3];
     showbalance() {
-        return this.balance;
+        return this.transactions;
+    }
+    trnsactions() {
+        return this.trnsactions;
     }
 }
 var account1 = new account();
 console.log("koko", account1.balance);
 console.log("koko", account1.showbalance());
+console.log("kokob", account1.getBalance());
+export {};
+// console.log("koko",bank.get());

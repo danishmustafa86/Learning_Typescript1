@@ -1,4 +1,3 @@
-"use strict";
 // class
 // inheritance
 // class Parent {
@@ -10,9 +9,9 @@
 // const aObject=new Child()
 // console.log(aObject.title);
 class Shape {
+    width = 0;
+    height = 0;
     constructor(width, height) {
-        this.width = 0;
-        this.height = 0;
         this.width = width;
         this.height = height;
     }
@@ -23,14 +22,14 @@ class Shape {
 const shaped = new Shape(10, 20);
 console.log("area of shape is " + shaped.getArea());
 class Circle extends Shape {
+    radiuss = 0;
     constructor(width, height, radius) {
         super(width, height);
-        this.radiuss = 0;
         this.radiuss = radius;
     }
     getArea() {
         this.getArea;
-        return this.radiuss * this.height;
+        return this.radiuss * this.height * 3.14;
     }
 }
 const circle = new Circle(2, 2, 5);
@@ -38,9 +37,30 @@ const result = circle.getArea();
 console.log(result);
 // multilevel inheritance
 class cube extends Shape {
+    third = 0;
     constructor(width, height, third) {
         super(width, height);
-        this.third = 0;
         this.third = third;
     }
 }
+class car {
+    color = "black";
+    weight = "100kg";
+    constructor(color, weight) {
+        this.color = color;
+        this.weight = weight;
+    }
+    getcombination() {
+        return `${this.color}+${this.weight}`;
+    }
+}
+class sportsCar extends car {
+    speed = "220kmph";
+    constructor(speed, color, weight) {
+        super(color, weight);
+        this.speed;
+    }
+}
+let normalCar = new sportsCar("220kmph", "black", "2500kg");
+console.log("extending as", normalCar);
+export {};

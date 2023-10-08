@@ -1,13 +1,13 @@
 // class
 // inheritance
-class Parent {
-title:string="ali"
-}
-class Child extends Parent {
-description:string="any descrition"
-}
-const aObject=new Child()
-console.log(aObject.title);
+// class Parent {
+// title:string="ali"
+// }
+// class Child extends Parent {
+// description:string="any descrition"
+// }
+// const aObject=new Child()
+// console.log(aObject.title);
 
 class Shape{
     width:number=0
@@ -31,7 +31,7 @@ this.radiuss = radius;
 
     getArea(): number {
         this.getArea
-         return this.radiuss*this.height
+         return this.radiuss*this.height*3.14
     }
 }
 
@@ -50,4 +50,25 @@ this.third = third;
     }
 }
 
+
+class car{
+    color:string="black"
+    weight:String="100kg"
+    constructor(color:string,weight:String){
+        this.color=color;
+        this.weight=weight;
+    }
+    getcombination():string{
+        return `${this.color}+${this.weight}`
+    }
+}
+class sportsCar extends  car{
+    speed:string="220kmph"
+    constructor(speed:string,color:string,weight:string){
+        super(color,weight);
+        this.speed
+    }
+}
+let normalCar=new sportsCar("220kmph","black","2500kg")
+console.log("extending as",normalCar);
 
